@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <!-- {{ data.location.name }} -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
         * {
             padding: 0%;
             margin: 0%;
             box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
             /* background-color: #beb9c3;; */
         }
 
         .main {
-            background-color: #f2f2f2;;
+            background-color: #f2f2f2;
+            ;
             padding: 30px;
             text-align: center;
             height: 100vh;
@@ -24,18 +28,20 @@
             display: flex;
             justify-content: center;
         }
-        .main div .left{
+
+        .main div .left {
             background-color: #e3e3e3;
             margin-left: 300px;
             width: 200px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; 
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         }
-        .main div .right{
+
+        .main div .right {
             background-color: rgb(253 80 137);
             margin-right: 300px;
             width: 200px;
             color: #dff31c;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; 
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         }
     </style>
     <title>Today {{ data.location.name }} temperature </title>
