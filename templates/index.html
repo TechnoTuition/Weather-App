@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Today Weather</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+     
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;;
+        }
+        .nav{
+            display: flex;
+            background-color: rgb(239 239 239);
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; 
+        }
+        .left{
+            list-style: none;
+            display: flex;
+        }
+        .nav li{
+            margin: 5px;
+        }
+
+        .right{
+            display: flex;
+        }
+        .right div{
+            margin-left: 5px;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            margin-top: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 2px;
+            height: 90vh;
+            /* border: 2px solid rebeccapurple; */
+            /* background: rgb(239 239/ 239); */
+            /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
+        }
+
+        input {
+            padding: 7.5px;
+            border: none;
+            border: 1px solid black;
+            border-radius: 2px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 9px;
+            background: rgb(253 80 137);
+            color: white;
+            font-size: 16px;
+            border-radius: 2px;
+            border: none;
+        }
+
+        button:hover {
+            background: rgb(241 41 107);;
+            /* border: rebeccapurple 0.5px dashed; */
+            color: black;
+            /* transition: 300ms ease-in al; */
+            cursor: pointer;
+        }
+        footer{
+            background-color: #efeaf1;
+            text-align: center;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">
+            <li>Home</li>
+            <li>About</li>
+            <li>Support</li>
+        </div>
+        <div class="right">
+            <div>
+                <button>Login</button>
+            </div>
+            <div>
+                <button>Register</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+        <form enctype="multipart/form-data" method="post">
+            <input autocomplete="off" name="city" placeholder="Enter Your City Name" type="text" />
+            <button type="submit"><i class="fa fa-cloud"></i> Get Weathers</button>
+        </form>
+    </div>
+    <footer>
+        All right Reserved by <a href="">readpost.com</a> 
+    </footer>
+</body>
+
+</html>

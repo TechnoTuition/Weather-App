@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- {{ data.location.name }} -->
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            /* background-color: #beb9c3;; */
+        }
+
+        .main {
+            background-color: #f2f2f2;;
+            padding: 30px;
+            text-align: center;
+            height: 100vh;
+        }
+
+        .main div {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .main div .left{
+            background-color: #e3e3e3;
+            margin-left: 300px;
+            width: 200px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; 
+        }
+        .main div .right{
+            background-color: rgb(253 80 137);
+            margin-right: 300px;
+            width: 200px;
+            color: #dff31c;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; 
+        }
+    </style>
+    <title>Today {{ data.location.name }} temperature </title>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <div class="left
+            ">
+                <p>Temperature </p>
+            </div>
+            <div class="right
+            "><span>{{ data.current.temp_c }}</span>
+            </div>
+
+        </div>
+        <div>
+            <div class="left
+            ">
+                <p>City</p>
+            </div>
+            <div class="right
+            "><span>{{ data.location.name }}</span>
+            </div>
+
+        </div>
+        <div>
+            <div class="left
+            ">
+                <p>Country</p>
+            </div>
+            <div class="right
+            "><span>{{ data.location.country }}</span>
+            </div>
+
+        </div>\
+        <div>
+            <div class="left
+            ">
+                <p>Time</p>
+            </div>
+            <div class="right
+            "><span>{{ data.location.localtime }}</span>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!-- 
+<p>Temperature {{ data.current.temp_c }}</p>
+<p>Country {{ data.location.country }}</p>
+<p>City {{ data.location.name }}</p>
+<p>Time {{ data.location.localtime }}</p> -->
+
+</body>
+
+</html>
